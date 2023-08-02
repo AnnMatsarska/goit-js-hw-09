@@ -5,6 +5,7 @@ startBtn.addEventListener('click', onStartClick);
 stoptBtn.addEventListener('click', onStopClick);
 
 let timerId;
+let randomColor;
 
 stoptBtn.disabled = true;
 

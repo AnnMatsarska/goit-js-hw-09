@@ -39,4 +39,5 @@ function onFormSubmit(evt) {
         );
       });
   }
+  formEl.reset();
 }

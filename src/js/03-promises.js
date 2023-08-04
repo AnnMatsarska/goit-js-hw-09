@@ -26,7 +26,6 @@ function onFormSubmit(evt) {
   let inputAmount = Number(amount.value);
 
   for (let i = 1; i <= inputAmount; i += 1) {
-    inputDelay += inputStep;
     createPromise(i, inputDelay)
       .then(({ position, delay }) => {
         Notiflix.Notify.success(
@@ -38,6 +37,8 @@ function onFormSubmit(evt) {
           `❌ Rejected promise ${position} in ${delay}ms`
         );
       });
+    inputDelay += inputStep;
   }
+
   formEl.reset();
 }

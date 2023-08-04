@@ -58,3 +58,7 @@ button[disabled] {
   background-color: #b8a3a3;
   cursor: default;
 }
+
+.form > button {
+  height: 40px;
+}
